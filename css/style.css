@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px; 
+    /* 18 */
+    /* color: var(--black); */
+    font-family: sans-serif;
+}
+.main {
+    color: var(--black);
+    user-select: none;
+}
+:root {
+    --black: #252729;
+    --primary-color: #027FFF;
+    --secondary-color: #015AB3;
+    --btn : #FFA103;
+    --btn-hover: #B37100;
+    --header-1: 40px;
+    --header-2: 32px;
+    --header-3: 24px;
+    --normal-text: 18px;
+}
+.main {
+    width: 100%;
+    position: relative;
+}
+.main header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px 7%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: flex-end;
+}
+header nav div {
+    margin-left: 5%;
+    cursor: pointer;
+    font-weight: 500;
+} 
+header nav div:hover {
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+header .logo {
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+header .logo img {
+    /* width: 250px; */
+    height: 100%;
+}
+.phone-header {
+    width: calc(100% - 14%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px 7%;
+    display: none;
+}
+.phone-header .logo {
+    width: 75%;
+    cursor: pointer;
+}
+.phone-header  .logo img {
+    height: 80px;
+}
+.phone-header .menu {
+    margin-top: -12px;
+    width: 20%;
+    text-align: center;
+    color: var(--primary-color) !important;
+    cursor: pointer;
+}
+.phone-header .menu .fa-bars {
+    font-size: var(--header-2);
+    color: var(--primary-color) !important;
+}
+
+.left {
+    left: 0% !important;
+    transition: 0.4s;
+}
+/* ///////////////// */
+
+.main-body {
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+.main-body .hero-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-area .hero-text {
+    font-size: var(--header-2);
+}
+
+.hero-area .hero-text,
+.hero-area .hero-img{
+    width: 50%;
+}
+.hero-area .hero-img {
+    min-width: 50%;
+}
+.hero-img img {
+    width: 100%;
+}
+.h1 {
+    font-size: var(--header-1);
+}
+.h2 {
+    font-size: var(--header-2);
+}
+.h3 {
+    font-size: var(--header-3);
+}
+.sm {
+    font-size: 16px;
+}
+.blue {
+    color: var(--primary-color);
+}
+.dark-blue {
+    color: var(--secondary-color);
+}
+.orange {
+    color: var(--btn);
+}
+.mb {
+    margin-bottom: 20px;
+}
+/* //// */
+.main-body .services {
+    width: 100%;
+    margin-top: 100px;
+}
+.main-body .services-container {
+    margin-top: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    
+}
+.services .service {
+    height: 750px;
+    padding: 20px;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.services .service .service-img {
+    width: 80%;
+    margin-left: 10%;
+}
+.services .service .service-img img {
+    width: 100%;
+}
+.service-brief {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 22%;
+    align-items: end;
+}
+.price {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    width: 30%;
+}
+.join-now {
+    background-color: var(--btn);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+.join-now:hover {
+    background-color: var(--btn-hover);
+    transition:0.3s;
+}
+.btn button{
+    width: 40%;
+    padding: 10px 20px;
+}
+
+/* /////// */
+.main-body .why {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.why .work {
+    margin-bottom:10px;
+}
+.why .name {
+    font-weight: 600;
+}
+.awards ul {
+    list-style: none;
+    margin: 0;
+    font-weight: 500;
+}
+.awards ul li {
+    color: var(--btn);
+    
+}
+.why .testmonials {
+    margin-top: 32px;
+}
+.testmonials .testmonials-title {
+    margin-bottom: 24px;
+}
+.testmonials .comment {
+    background-color: #EEE;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 88%;
+    margin-left: 6%;
+}
+
+.contact {
+    width: 100%;
+    margin-top: 48px;
+    margin-top: 150px;
+}
+.contact .send-message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.send-message textarea {
+    resize: none;
+    overflow: hidden;
+    padding: 16px;
+    width: 70%;
+}
+.send-message textarea:focus {
+    outline: none;
+}
+.send-message .message-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.send-message button {
+    height: 40px;
+    width: 100px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.send-message .send {
+    
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+.send-message .clear {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
+}
+.send-message .send:hover {
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+.send-message .clear:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.3s;
+}
+footer {
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--primary-color);
+    margin-top: 40px;
+}
+
+.up-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+.up-btn:hover {
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+.up-btn span {
+    color: white;
+}
+.up-btn span .fa-chevron-up {
+    color: white;
+    
+}
+.sorry {
+    width: 40%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 2px 2px 16px;
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    display: none;
+}
+.sorry .h2 {
+    color: red;
+    font-weight: 600;
+}
+.sorry .sorry-img {
+    width: 80%;
+    margin-left: 10%;
+}
+.sorry-img img {
+    width: 100%;
+}
+.sorry button {
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.sorry button:hover {
+    background-color: var(--secondary-color);
+}
+.sorry .why-sorry {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.message-sent {
+    width: 40%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 2px 2px 16px;
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    display: none;
+}
+.message-sent .h2 {
+    font-weight: 600;
+}
+.message-sent .sent-img {
+    width: 80%;
+    margin-left: 10%;
+}
+.sent-img img {
+    width: 100%;
+}
+.message-sent button {
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.message-sent button:hover {
+    background-color: var(--secondary-color);
+}
+@media (max-width: 800px ) {
+    .main-body .services-container{
+        grid-template-columns: 1fr;
+    }
+    .hero-area {
+        flex-direction: column;
+    }
+    .hero-area .hero-text,
+    .hero-area .hero-img {
+        width: 100%;
+    }
+    .send-message textarea {
+        width: 100%;
+    }
+    .main-header {
+        flex-direction: column;
+        width: 50% !important;
+        align-items: start;
+        justify-content: start;
+        padding: 16px !important;
+        background-color: white;
+        height: 100vh !important;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 0.4s;
+        box-shadow: 1px 1px 16px ;
+    }
+    .main-header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        margin-top: 64px;
+    }
+    .main-header nav div {
+        margin-bottom: 40px;
+    }
+    .main-header .logo {
+        display: none;
+    }
+    .phone-header {
+        display: flex;
+    }
+    .sorry {
+        top: 15%;
+        width: 60%;
+        left: 20%;
+    }
+    .message-sent {
+        top: 15%;
+        width: 60%;
+        left: 20%;
+    }
+}
