@@ -1,202 +1,234 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Businessmen Factory</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="shortcut icon" href="images/Graphicloads-100-Flat-Chart.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Businessmen Factory</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="shortcut icon" href="images/Graphicloads-100-Flat-Chart.ico" type="image/x-icon">
+
+        <style>
+            
+        </style>
 </head>
 <body>
     <div class="main">
+        <!-- Loading Screen -->
+        <div class="loading-screen">
+            <div class="loading-spinner"></div>
+        </div>
+        
+        <!-- Mobile Header -->
         <div class="phone-header">
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
             <div class="logo">
-                <img src="images/twitter_header_photo_1.png" alt="">
+                <img src="images/twitter_header_photo_1.png" alt="Businessmen Factory">
             </div>
-            
         </div>
+        
+        <!-- Desktop Header -->
         <header class="main-header">
             <div class="logo">
-                <img src="images/twitter_header_photo_1.png" alt="">
+                <img src="images/twitter_header_photo_1.png" alt="Businessmen Factory">
             </div>
             <nav>
-                <div class="services-btn  link-btn" data-link="services"> Services</div>
-                <div class="why-btn link-btn" data-link="why">Why Us ?</div>
+                <div class="services-btn link-btn" data-link="services">Services</div>
+                <div class="why-btn link-btn" data-link="why">Why Us?</div>
                 <div class="contact-btn link-btn" data-link="contact">Contact</div>
             </nav>
         </header>
+
+        <!-- Scroll to Top Button -->
         <div class="up-btn">
-            <span>
-                <i class="fa-solid fa-chevron-up"></i>
-            </span>
+            <i class="fa-solid fa-chevron-up"></i>
         </div>
-        <div class="sorry">
+        
+        <!-- Modal Overlay -->
+        <div class="modal-overlay"></div>
+        
+        <!-- Sorry Modal -->
+        <div class="modal sorry">
             <p class="h2">Sorry!</p>
-            <div class="sorry-img"><img src="images/Computer troubleshooting-pana.png" alt=""></div>
+            <div class="modal-img">
+                <img src="images/Computer troubleshooting-pana.png" alt="Sorry">
+            </div>
             <p class="why-sorry">We are not accepting any joins at the moment</p>
             <button>Okay</button>
         </div>
-        <div class="message-sent">
+        
+        <!-- Message Sent Modal -->
+        <div class="modal message-sent">
             <p class="h2 blue">Message Sent!</p>
-            <div class="sent-img"><img src="images/Mail sent-rafiki.png" alt=""></div>
+            <div class="modal-img">
+                <img src="images/Mail sent-rafiki.png" alt="Message Sent">
+            </div>
             <button>Okay</button>
         </div>
+        
         <div class="main-body">
-
-            <div class="hero-area">
+            <!-- Hero Section -->
+            <div class="hero-area fade-in">
                 <div class="hero-text">
-
-                    <p class="h1">The <span class="blue h1">#1</span>  Organisation for Business Courses <span class="blue h1">World Wide!!</span> </p>
-                    <p class="h3">We offer you the perfect courses for the best prices </p>
+                    <p class="h1">The <span class="blue h1">#1</span> Organisation for Business Courses <span class="blue h1">Worldwide!</span></p>
+                    <p class="h3">We offer you the perfect courses for the best prices</p>
                     <p class="h3">
-                        for best results we are offering <span class="blue h3">4</span> types of courses 
+                        For best results we are offering <span class="blue h3">4</span> types of courses 
                         with the most <span class="blue h3">Successful Businessmen</span> that will train you and save 
                         so much time of searching and looking for you!
                     </p>
                 </div>
                 <div class="hero-img">
-                    <img src="images/Business growth-rafiki.png" alt="">
+                    <img src="images/Business growth-rafiki.png" alt="Business Growth">
                 </div>
-
-                
             </div>
-            <div class="services" id="services">
-                <p class="h1 blue">Our Services</p>
+            
+            <!-- Services Section -->
+            <div class="services fade-in" id="services">
+                <p class="h1 blue section-title">Our Services</p>
                 <div class="services-container">
-
-                    <div class="service service-1">
-                        <p class="h1 blue">Tier One</p>
-                        <div class="service-img"><img src="images/In progress-pana.png" alt=""></div>
+                    <div class="service">
+                        <p class="h2 blue">Tier One</p>
+                        <div class="service-img">
+                            <img src="images/In progress-pana.png" alt="Tier One">
+                        </div>
                         <div class="service-brief">
-                            <p class="h2"> Know nothing about business ?</p>
-                            <p class="h2">No problem,</p>
-                            <br>
+                            <p class="h3">Know nothing about business?</p>
+                            <p class="h3">No problem!</p>
                             <p class="h3">
-                               This tier is for <span class="blue h3">Entery level </span> learners who want to know the 
+                                This tier is for <span class="blue h3">Entry level</span> learners who want to know the 
                                 fundamentals of business and how to grow and invest money.
                             </p>
                         </div>
-                        <div class="btn"><button class="price"><del style="font-weight: 400;">100 $</del> 60$</button> <button class="join-now">Join now</button></div>
-                        
+                        <div class="btn">
+                            <button class="price"><del>$100</del> $60</button>
+                            <button class="join-now"><span>Join Now</span></button>
+                        </div>
                     </div>
-                    <div class="service service-2">
-                        <p class="h1 blue">Tier Two</p>
+                    
+                    <div class="service">
+                        <p class="h2 blue">Tier Two</p>
                         <div class="service-img">
-                            <img src="images/Telecommuting-rafiki.png" alt="">
-                            
+                            <img src="images/Telecommuting-rafiki.png" alt="Tier Two">
                         </div>
                         <div class="service-brief">
                             <p class="h3">
-                                For businessmen with <span class="blue h3">Low Experiance</span> who want to learn more about business
-                                and want to gain more experiance.
+                                For businessmen with <span class="blue h3">Low Experience</span> who want to learn more about business
+                                and want to gain more experience.
                             </p>
-                            
-                            
                         </div>
-                        <div class="btn"><button class="price"><del style="font-weight: 400;">200 $</del> 150$</button> <button class="join-now">Join now</button></div>
+                        <div class="btn">
+                            <button class="price"><del>$200</del> $150</button>
+                            <button class="join-now"><span>Join Now</span></button>
+                        </div>
                     </div>
-                    <div class="service service-3">
-                        <p class="h1 blue">Tier Three</p>
-                        <div class="service-img"><img src="images/Businessman-pana.png" alt=""></div>
-                        <div class="service-brief">
-                            <p class="h3">
-                                For <span class="blue h3">Experianced</span> businessmen who want to increase there experiance 
-                                to top level and know the ultimate secrets for being a Master!!
-                            </p>
 
-                           
+                    <div class="service">
+                        <p class="h2 blue">Tier Three</p>
+                        <div class="service-img">
+                            <img src="images/Businessman-pana.png" alt="Tier Three">
                         </div>
-                        <div class="btn"><button class="price"><del style="font-weight: 400;">500 $</del> 360$</button> <button class="join-now">Join now</button></div>
-                    </div>
-                    <div class="service service-4">
-                        <p class="h1 blue">Tier Four</p>
-                        <div class="service-img"><img src="images/Finance leaders-pana.png" alt=""></div>
                         <div class="service-brief">
-                            <p class="h2">Want to be a CEO or even an Entrepreneur ?</p>
-                            <p class="h2">We have the solution,</p>
-                            <br>
                             <p class="h3">
-                                This tier is for the <span class="blue h3">Top-level Experianced</span> businessmen
-                                who want to be the best in thier field.
+                                For <span class="blue h3">Experienced</span> businessmen who want to increase their experience 
+                                to top level and know the ultimate secrets for being a Master!
                             </p>
-                        
-                            
-                            
                         </div>
-                        <div class="btn"><button class="price"><del style="font-weight: 400;">1000 $</del> 800$</button> <button class="join-now">Join now</button></div>
+                        <div class="btn">
+                            <button class="price"><del>$500</del> $360</button>
+                            <button class="join-now"><span>Join Now</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="service">
+                        <p class="h2 blue">Tier Four</p>
+                        <div class="service-img">
+                            <img src="images/Finance leaders-pana.png" alt="Tier Four">
+                        </div>
+                        <div class="service-brief">
+                            <p class="h3">Want to be a CEO or even an Entrepreneur?</p>
+                            <p class="h3">We have the solution!</p>
+                            <p class="h3">
+                                This tier is for the <span class="blue h3">Top-level Experienced</span> businessmen
+                                who want to be the best in their field.
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <button class="price"><del>$1000</del> $800</button>
+                            <button class="join-now"><span>Join Now</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <div class="why" id="why">
-                <p class="h1 blue mb">Why Us ?</p>
-                <p class="h2 mb">Businessmen Factory is the biggest business courses Organisation Word Wide</p>
+            
+            <!-- Why Us Section -->
+            <div class="why fade-in" id="why">
+                <p class="h1 blue mb section-title">Why Us?</p>
+                <p class="h2 mb">Businessmen Factory is the biggest business courses Organisation Worldwide</p>
+                
                 <div class="awards">
                     <p class="h2 blue mb">Lots Of Awards</p>
-                    <p class="h3 mb">Our Organisation won 3 awards from Bussiness care organisation:</p>
+                    <p class="h3 mb">Our Organisation won 3 awards from Business Care Organisation:</p>
                     <ul>
-                        <li><span>1-</span>  Golden Coach</li>
-                        <li><span>2-</span>  Greatest Coaching service</li>
-                        <li><span>3-</span>  Heighst Quality award</li>
+                        <li><span>1.</span> Golden Coach Award</li>
+                        <li><span>2.</span> Greatest Coaching Service</li>
+                        <li><span>3.</span> Highest Quality Award</li>
                     </ul>
                 </div>
-                <div class="testmonials">
-                    <p class="h2 testmonials-title">Here is some of our graduates Messages:</p>
-                    <div class="comment">
-                        <p class="id">
+                
+                <div class="testimonials">
+                    <p class="h2 section-title">Here are some of our graduates' messages:</p>
+                    <div class="testimonials-grid">
+                        <div class="comment">
                             <div class="name blue">Ahmed Ali</div>
-                            <div class="work sm">Ceo of Calsar company</div>
-                        </p>
-                        <p class="message">
-                            "Thank you so much for helping me overcomeing my problems that got into my way to be successful"
-                        </p>
-                    </div>
-                    <div class="comment">
-                        <p class="id">
-                            <div class="name blue">John clinton</div>
-                            <div class="work sm">Business man</div>
-                        </p>
-                        <p class="message">
-                            "One of my best choices is joining Businessmen factory organisation"
-                        </p>
-                    </div>
-                    <div class="comment">
-                        <p class="id">
-                            <div class="name blue">Andrew jhonson</div>
-                            <div class="work sm">Ceo of Amala Organisation</div>
-                        </p>
-                        <p class="message">
-                            "I really  regret the time i spent before joining Businessmen factory!!"
-                        </p>
+                            <div class="work sm">CEO of Calsar Company</div>
+                            <p class="message">
+                                "Thank you so much for helping me overcome my problems that got in my way to be successful"
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <div class="name blue">John Clinton</div>
+                            <div class="work sm">Businessman</div>
+                            <p class="message">
+                                "One of my best choices is joining Businessmen Factory organisation"
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <div class="name blue">Andrew Johnson</div>
+                            <div class="work sm">CEO of Amala Organisation</div>
+                            <p class="message">
+                                "I really regret the time I spent before joining Businessmen Factory!"
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="contact" id="contact">
-                <p class="h2 blue mb">Having any questions or want to report a problem ?</p>
-                <p class="h3"> contact us on our  <a href="mailto:businessFactory0@gmail.com" class="blue" style="text-decoration: none;">Email</a></p>
+            
+            <!-- Contact Section -->
+            <div class="contact fade-in" id="contact">
+                <p class="h2 blue mb">Having any questions or want to report a problem?</p>
+                <p class="h3">Contact us on our <a href="mailto:businessFactory0@gmail.com" class="blue" style="text-decoration: none;">Email</a></p>
                 <p class="h3 mb">Or send us a direct message</p>
                 <div class="send-message">
-                    <textarea  cols="40" rows="5" placeholder="Write message..."></textarea>
+                    <textarea cols="40" rows="5" placeholder="Write your message here..."></textarea>
                     <div class="message-btns">
-
                         <button class="clear">Clear</button>
-                    <button class="send">Send</button>
+                        <button class="send">Send</button>
                     </div>
                 </div>
-        
             </div>
         </div>
-
+        
         <footer>
-            <p class="h3 blue">Businessmen Factory ® all rights reserved 2023</p>
+            <p class="h3">Businessmen Factory ® All rights reserved 2023</p>
         </footer>
-
     </div>
+    
     <script src="js/index.js"></script>
-    <script src="js/all.min.js"></script>
+   
 </body>
 </html>
